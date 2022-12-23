@@ -53,9 +53,9 @@ int main() {
         std::string message;
 
         // Checking username is already in use
+        std::cout << "SignUp API: Error Checking..." << std::endl;
         for (int i = 0; i < data.size(); i++) {
             if (data[i]["username"] == username) {
-                std::cout << "SignUp API: Error Checking..." << std::endl;
 
 
                 // If valid gets all the information
@@ -105,8 +105,8 @@ int main() {
         json data = readJSON();
 
         // Checking if valid login information
+        std::cout << "Login API: Error Checking..." << std::endl;
         for (int i = 0; i < data.size(); i++) {
-            std::cout << "SignUp API: Error Checking..." << std::endl;
             if (data[i]["username"] == username &&
                 data[i]["password"] == password) {
 
